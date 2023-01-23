@@ -1,5 +1,5 @@
 # Java_Explorer
-Oracle Java programming basics Certification
+Oracle Java programming basics certification.
 
 Your goal: Pass Assessment
 
