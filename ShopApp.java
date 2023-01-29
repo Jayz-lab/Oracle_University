@@ -6,6 +6,8 @@
 //Exercise 4-2: Using Array, completed 21/01/2023
 //Exercise4 4-3: Using a Loop to Process an Array, completed 23/01/2023
 //Exercise 4-4: Using if Statements to Control Flow, completed 23/01/2023
+//Exercise 5-1: Apply Encapsulation- encapsulate all variables for Customer & Clothing class, provding accessor methods (getters and setters), completed 29/01/2023
+//Exercise 5-2: Overload a Method, completed 29/01/2023
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
@@ -24,6 +26,8 @@ public class ShopApp {
     public static void main(String[] args) {
         System.out.println("Welcome to Duke Choice Shop!");
 
+        //Removed for Exercise 5-1, Apply encapsulation
+        //code is now in Clothing class
         double tax = 0.2; //representing 20%
 
         double total = 0.0;//Exercise4 4-3: Using a Loop to Process an Array
@@ -32,10 +36,12 @@ public class ShopApp {
         //creating an instance of the Customer Class (an object) in memory
         //c1 is a reference/pointer to that object
         Customer c1 = new Customer();
-        c1.name = "Pinky";
-        c1.size = "S";
+        c1.setName("Pinky");
+        c1.setSize("S");
 
-        System.out.println("Customer c1 is " + c1.name);
+        //System.out.println("Customer c1 is " + c1.getName() + "," + c1.getSize());
+        //this will output the size to "s" no matter what because the code runs top down
+        //to get a different output, prinln should be directly after the code. for example Exercise 5-2.
 
         //creating new objects of Clothing.java (class)
         Clothing item1 = new Clothing();
@@ -46,24 +52,24 @@ public class ShopApp {
         //Arrays are useful in programming because they allow you to store multiple values of the same type in a single variable, which makes it easier to organize and manage large amounts of data.
         Clothing[] items = {item1, item2, new Clothing(), new Clothing()};//initializing variables to reference new Clothing objects
 
-        item1.description = "Blue Jacket";
-        item1.price = 20.9;
-        item1.size = "M";
+        item1.setDescription("Blue Jacket");
+        item1.setPrice(20.9);
+        item1.setSize("M");
 
-        item2.description = "Orange T-shirt";
-        item2.price = 10.5;
-        item2.size = "S";
+        item2.setDescription("Orange T-shirt");
+        item2.setPrice(9.5);
+        item2.setSize("S");
         
         //Exercise 4.4
         //add two more items to the clothing array
         //initializing variables to reference new Clothing objects
-        items[2].description = "Green Scarf";
-        items[2].price = 5;
-        items[2].size = "S";
+        items[2].setDescription("Green Scarf");
+        items[2].setPrice(5);
+        items[2].setSize("S");
         
-        items[3].description = "Blue T-shirt";
-        items[3].price = 10.5;
-        items[3].size = "S";
+        items[3].setDescription("Blue T-shirt");
+        items[3].setPrice(10.5);
+        items[3].setSize("S");
         
         //System.out.println("Item 1" + "," + item1.description + "," + item1.price + "," + item1.size);
         //System.out.println("Item 2" + "," + item2.description + "," + item2.price + "," + item2.size);
@@ -84,6 +90,11 @@ public class ShopApp {
          //total = (item1.price + item2.price + 2) * (1 + tax);//Code commented out as per Exercise 4-3 requirements
         
         int measurement = 3;
+        //Exercise 5-2: Overload a method
+        //Invoke the newly set version of setSize method, passing a value 0f 3 as an argument/
+        c1.setSize(measurement);
+        //c1.setSize(8);
+        System.out.println("Customer c1 is " + c1.getName() + "," + c1.getSize());
 
         //Exercise 4-1: Using switch Statements
         //switch statment: is easier to read and maintain 
@@ -98,19 +109,24 @@ public class ShopApp {
         The "break" statement at the end of each case block is used to exit the switch statement once a match has been found. 
         This way, the code execution doesn't continue to the next case statement.
         */
+        
+        //Exercise 5-2:Overload a method
+        //moved this code to Cutomer class into the setSize method(int measurement)
+        /*
         switch (measurement) {
             case 1,2,3:
-                c1.size = "S";
+                c1.setSize("S");
                 break;
             case 4,5,6:
-                c1.size = "M";
+                c1.setSize("M");
                 break;
             case 7,8,9:
-                c1.size = "L";
+                c1.setSize("L");
                 break;
             default:
-                c1.size = "X";
+                c1.setSize("X");
         }
+        */
         
         //Exercise4 4-3: Using a Loop to Process an Array
         //Types of loops + Loop examples below
@@ -121,8 +137,11 @@ public class ShopApp {
         for(Clothing item : items){
             //if condition that checks if customer size if the same as the clothing size
             //if ci size == item size
-            if(c1.size.equals(item.size)){
-                total = total + item.price;
+            if(c1.getSize().equals(item.getSize())){
+                total = total + item.getPrice();
+                System.out.println("Item" + "," + item.getDescription() + "," + item.getPrice() + "," + item.getSize());              
+                //code removed for exercise 5-1
+                //total = total + total + tax;
                 //change logic in the for- each loop to exit the loop when total is >5
                 if (total > 15){break;}
             /*
@@ -130,7 +149,6 @@ public class ShopApp {
             because it is meant to print information about each individual "Clothing" object as the loop iterates through the array or list.
             This line of code is executed once for every object in the array or list.
             */
-            System.out.println("Item" + "," + item.description + "," + item.price + "," + item.size);
             }     
         }
         /*
