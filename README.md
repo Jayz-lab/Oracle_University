@@ -29,7 +29,7 @@ An Overview of Java
 - Java on OCI
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# This repo contains completed exercise codes for this program.
+# This repo contains completed exercise codes for the Oracle Java programming Basics.
 
 Main Method:
 
