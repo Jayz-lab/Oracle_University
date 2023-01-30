@@ -7,10 +7,6 @@ Your goal: Pass Assessment
 
 7+ Hours of expert training
 
-2 parts
-1.	Overview of the world of Java
-2.	Course to teach basic programming skills in Java
-
 Learn Java programming basics such as variables, classes, objects, loops, arrays, and decision constructs. Get introduced to Java's object-oriented capabilities. Learn how to play with Java using the NetBeans IDE, as well as the Oracle Cloud. Go ahead and Earn the Explorer Badge!
 
 This learning path provides an introduction to Java for:
