@@ -8,6 +8,7 @@
 //Exercise 4-4: Using if Statements to Control Flow, completed 23/01/2023
 //Exercise 5-1: Apply Encapsulation- encapsulate all variables for Customer & Clothing class, provding accessor methods (getters and setters), completed 29/01/2023
 //Exercise 5-2: Overload a Method, completed 29/01/2023
+//Exercise 5-3: Associate Customer with Clothing, completed 30/01/2023
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
@@ -71,6 +72,10 @@ public class ShopApp {
         items[3].setPrice(10.5);
         items[3].setSize("S");
         
+        //Exercise 5-3
+        //In the main method pass an array of Clothing items to the addItems method
+        c1.addItems(items);
+        
         //System.out.println("Item 1" + "," + item1.description + "," + item1.price + "," + item1.size);
         //System.out.println("Item 2" + "," + item2.description + "," + item2.price + "," + item2.size);
         
@@ -94,7 +99,7 @@ public class ShopApp {
         //Invoke the newly set version of setSize method, passing a value 0f 3 as an argument/
         c1.setSize(measurement);
         //c1.setSize(8);
-        System.out.println("Customer c1 is " + c1.getName() + "," + c1.getSize());
+        System.out.println("Customer c1 is " + c1.getName() + "," + c1.getSize() + "," + c1.getTotalClothingCost());
 
         //Exercise 4-1: Using switch Statements
         //switch statment: is easier to read and maintain 
@@ -134,16 +139,17 @@ public class ShopApp {
         //for each loop ie. enhanced for loop
         //clothing is the type, item is the iterator that iterates the array items
         //items points to to the Clothing array
-        for(Clothing item : items){
+        for(Clothing item : c1.getItems()){
+            System.out.println("Items " + item.getDescription());
             //if condition that checks if customer size if the same as the clothing size
             //if ci size == item size
-            if(c1.getSize().equals(item.getSize())){
-                total = total + item.getPrice();
-                System.out.println("Item" + "," + item.getDescription() + "," + item.getPrice() + "," + item.getSize());              
+            //if(c1.getSize().equals(item.getSize())){
+             //   total = total + item.getPrice();
+                //System.out.println("Item" + "," + item.getDescription() + "," + item.getPrice() + "," + item.getSize());              
                 //code removed for exercise 5-1
                 //total = total + total + tax;
                 //change logic in the for- each loop to exit the loop when total is >5
-                if (total > 15){break;}
+               // if (total > 15){break;}
             /*
             The System.out.println("Item" + "," + item.description + "," + item.price + "," + item.size);line of code is inside the for loop 
             because it is meant to print information about each individual "Clothing" object as the loop iterates through the array or list.
@@ -156,7 +162,7 @@ public class ShopApp {
         line of code is outside the for loop because it is meant to print a final statement that summarizes the total cost of all the "Clothing" objects,
         This line of code is executed only once, after the for loop has completed.
         */
-        System.out.println("Customer has to pay a total of " + total );
+        //System.out.println("Customer has to pay a total of " + total );
         
         //Code commented out as per Exercise 4-3 requirements
         //System.out.println("Customer has to pay, " + taxTotal + " in tax.");
@@ -165,7 +171,7 @@ public class ShopApp {
         //System.out.println(items);
     }
 
-}
+//}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Types of loops
