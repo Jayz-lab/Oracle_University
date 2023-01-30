@@ -11,7 +11,6 @@ Benefits of Modeling is that it prevents future costly and time consumer remodel
 Modeling helps to get close to the ideal of the business needs and requiremeents.
 
 */
-
 package duke.choice;
 
 /*
@@ -28,6 +27,40 @@ public class Customer {
     private String size;
     //private int measurement = 3;
     
+    //Exercise 5-3:
+    //Add a private instance variable to the Customer class to store an array of Clothing objects
+    private Clothing[] items;
+    
+    //Exercise 5-3:
+    //Provide a public method called addItems
+    //accepts Clothing arrays as argument
+    //assigns it to the items instance variable
+    public void addItems (Clothing[] someItems){
+        items = someItems;
+    }
+    
+    //Exercise 5-3:
+    //Provide a public method that returns an array of Clothing items.
+    public Clothing[] getItems (){
+        return items;
+    }
+    
+    //Exercise 5-3:
+    //Provide a public method called getTotalClothingCost that calculates and retuns the total cost of all clothing items for this customer
+    public double getTotalClothingCost() {
+        double total = 0.0;
+        
+        for (Clothing item : items) {
+            //if condition that checks if customer size if the same as the clothing size
+            //if ci size == item size
+           // if (c1.getSize().equals(item.getSize())) {
+                total = total + item.getPrice();
+                System.out.println("Item" + "," + item.getDescription() + "," + item.getPrice() + "," + item.getSize());
+            //}
+        }
+        return total;
+    }
+        
     //Exercise 5-1: Apply encapsulation
     /*
     //right click select insert code: Getter & Setter plus encapsulate
@@ -49,7 +82,7 @@ public class Customer {
     public void setSize(String size) {
         this.size = size;
     }
-    
+   
     //Exercise 5-2: Overload a method
     //Add a new method to the customer class called setSize.
     //It should be similar to the existing setSize method, except it should accpt the int measurement paramter
