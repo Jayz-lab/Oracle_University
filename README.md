@@ -1,4 +1,4 @@
-# Oracle_Java_Explorer_Accreditation
+# Oracle_Java_Explorer
 
 The Oracle Learning Explorer program offers entry-level [Free Training Courses & Accreditation](https://education.oracle.com/learning-explorer).
 - Oracle [Java programming Basics](https://mylearn.oracle.com/ou/learning-path/java-explorer/79726).
