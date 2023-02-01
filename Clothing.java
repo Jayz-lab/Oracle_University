@@ -25,6 +25,15 @@ public class Clothing {
     //netBeans will replace all direct Clothing & Customer variable references 
     //in the main method of the ShopApp classn with corresponding set & get method invocations.
     */
+
+    //Exercise 6-1: Add Customer Constructor
+    public Clothing(String description, double price, String aSize) {
+        this.description = description;
+        this.price = price;
+        size = aSize; //instead of using this.size = size; since the Variable is named differently
+    }
+  
+   
     public String getDescription() {
         return description;
     }
