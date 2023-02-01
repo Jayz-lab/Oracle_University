@@ -1,14 +1,3 @@
-//Exercise 1: Intro to Oracle Cloud and Install NetBeans
-//Exercise 2: Creating a New Project and Java Class, completed 19/01/2023
-//Exercise 3-1: Using String Variables, completed 19/01/2023
-//Exercise 3-2: Using Numeric and Text Variables, completed 20/01/2023
-//Exercise 4-1: Using switch Statements, completed 20/01/2023
-//Exercise 4-2: Using Array, completed 21/01/2023
-//Exercise4 4-3: Using a Loop to Process an Array, completed 23/01/2023
-//Exercise 4-4: Using if Statements to Control Flow, completed 23/01/2023
-//Exercise 5-1: Apply Encapsulation- encapsulate all variables for Customer & Clothing class, provding accessor methods (getters and setters), completed 29/01/2023
-//Exercise 5-2: Overload a Method, completed 29/01/2023
-//Exercise 5-3: Associate Customer with Clothing, completed 30/01/2023
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
@@ -30,47 +19,52 @@ public class ShopApp {
         //Removed for Exercise 5-1, Apply encapsulation
         //code is now in Clothing class
         double tax = 0.2; //representing 20%
-
+        
         double total = 0.0;//Exercise4 4-3: Using a Loop to Process an Array
 
         //Exercise 2: Creating a New Project and Java Class
         //creating an instance of the Customer Class (an object) in memory
         //c1 is a reference/pointer to that object
-        Customer c1 = new Customer();
-        c1.setName("Pinky");
-        c1.setSize("S");
+        Customer c1 = new Customer("pinky", 3);
+        //c1.setName("Pinky");//commented out for exercise 6-1; requirement
+        //c1.setSize("S");
 
         //System.out.println("Customer c1 is " + c1.getName() + "," + c1.getSize());
         //this will output the size to "s" no matter what because the code runs top down
         //to get a different output, prinln should be directly after the code. for example Exercise 5-2.
 
         //creating new objects of Clothing.java (class)
-        Clothing item1 = new Clothing();
-        Clothing item2 = new Clothing();
+        //exercise 6-2: add clothing constructors, arguments taken from code below
+        Clothing item1 = new Clothing("Blue Jacket",20.9,"M");
+        Clothing item2 = new Clothing("Orange T-shirt", 9.5, "S");
 
         //Exercise 4-2: Using Array
         //Create an array of Clothing (class: CLothing.java) objects and populate it using existingt clothing obj references
         //Arrays are useful in programming because they allow you to store multiple values of the same type in a single variable, which makes it easier to organize and manage large amounts of data.
-        Clothing[] items = {item1, item2, new Clothing(), new Clothing()};//initializing variables to reference new Clothing objects
+        //exercise 6-2: add clothing constructors, arguments taken from code below
+        Clothing[] items = {item1, item2, new Clothing("Green Scarf", 5, "s"), new Clothing("Blue T-shirt", 10.5, "S")};//initializing variables to reference new Clothing objects
 
-        item1.setDescription("Blue Jacket");
-        item1.setPrice(20.9);
-        item1.setSize("M");
+        //commented out for exercise 6-2: add clothing constructors
+        //constructos for the following code has been added in clothing class
+        //arguments are pass directly into the constructor above
+        //item1.setDescription("Blue Jacket");
+        //item1.setPrice(20.9);
+        //item1.setSize("M");
 
-        item2.setDescription("Orange T-shirt");
-        item2.setPrice(9.5);
-        item2.setSize("S");
+        //item2.setDescription("Orange T-shirt");
+        //item2.setPrice(9.5);
+        //item2.setSize("S");
         
         //Exercise 4.4
         //add two more items to the clothing array
         //initializing variables to reference new Clothing objects
-        items[2].setDescription("Green Scarf");
-        items[2].setPrice(5);
-        items[2].setSize("S");
+        //items[2].setDescription("Green Scarf");
+        //items[2].setPrice(5);
+        //items[2].setSize("S");
         
-        items[3].setDescription("Blue T-shirt");
-        items[3].setPrice(10.5);
-        items[3].setSize("S");
+        //items[3].setDescription("Blue T-shirt");
+        //items[3].setPrice(10.5);
+        //items[3].setSize("S");
         
         //Exercise 5-3
         //In the main method pass an array of Clothing items to the addItems method
@@ -97,7 +91,7 @@ public class ShopApp {
         int measurement = 3;
         //Exercise 5-2: Overload a method
         //Invoke the newly set version of setSize method, passing a value 0f 3 as an argument/
-        c1.setSize(measurement);
+        //c1.setSize(measurement);
         //c1.setSize(8);
         System.out.println("Customer c1 is " + c1.getName() + "," + c1.getSize() + "," + c1.getTotalClothingCost());
 
@@ -173,6 +167,8 @@ public class ShopApp {
 
 //}
 
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Types of loops
 //A 'While' loop, repeats while a Boolean expression is true.(not covered in Java Explorer)
@@ -217,3 +213,4 @@ public class ShopApp {
         //loops through to index 4 = to passmark
         //therefore passmark = true
  */
+
