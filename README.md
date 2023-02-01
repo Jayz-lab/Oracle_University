@@ -22,7 +22,7 @@ An Overview of Java
 - Classes and Objects
 - Exception Handling
 - Inheritance and Interfaces
-- Java on OCI
+- Java on Oracle Cloud Interface (OCI)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # This repo contains completed exercise codes for the Oracle Java programming Basics.
