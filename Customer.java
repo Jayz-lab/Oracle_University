@@ -30,6 +30,13 @@ public class Customer {
     //Exercise 5-3:
     //Add a private instance variable to the Customer class to store an array of Clothing objects
     private Clothing[] items;
+
+    //Exercise 6-1: 
+    //add constructor to a customer class to initialize the name field
+    public Customer(String name, int measurement) {
+        this.name = name;
+        setSize(measurement);
+    }
     
     //Exercise 5-3:
     //Provide a public method called addItems
