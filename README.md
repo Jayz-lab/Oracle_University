@@ -51,6 +51,6 @@ Exercises Completed:
 - Exercise 5-3: Associate Customer with Clothing, completed 30/01/2023
 - Exercise 6-1: Add Customer Constructor, completed 1/02/2023.
 - Exercise 6-2: Add Clothing Constructor, completed 1/02/2023.
-- Exercise 6-3: Use Static Constants, completed /02/2023.
+- Exercise 6-3: Use Static Constants, completed 2/02/2023.
 
 
