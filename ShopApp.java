@@ -28,6 +28,9 @@ public class ShopApp {
         Customer c1 = new Customer("pinky", 3);
         //c1.setName("Pinky");//commented out for exercise 6-1; requirement
         //c1.setSize("S");
+        
+        ////Exercise 6-3: Use Static Constants
+        System.out.println("Min price " + Clothing.minPrice);
 
         //System.out.println("Customer c1 is " + c1.getName() + "," + c1.getSize());
         //this will output the size to "s" no matter what because the code runs top down
