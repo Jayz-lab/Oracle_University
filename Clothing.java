@@ -16,8 +16,12 @@ public class Clothing {
     //Exercise 5-1: Apply encapsulation
     //Add two constants to Clothing Class
     //minimum price and tax rate
-    private final double minPrice = 10.0;
-    private final double tax = 0.2;
+    //private final double minPrice = 10.0;
+    //private final double tax = 0.2;
+    
+    //Exercise 6-3: Use Static Constants
+    public final static double minPrice = 10.0;
+    public final static double tax = 0.2;
     
     //Exercise 5-1: Apply encapsulation
     /*
