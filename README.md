@@ -52,5 +52,5 @@ Exercises Completed:
 - Exercise 6-1: Add Customer Constructor, completed 1/02/2023.
 - Exercise 6-2: Add Clothing Constructor, completed 1/02/2023.
 - Exercise 6-3: Use Static Constants, completed 2/02/2023.
-
+- Exercise 7-1: Produce and Catch an exception, completed 3/02/2023.
 
