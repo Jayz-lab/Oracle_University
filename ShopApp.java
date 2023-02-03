@@ -168,6 +168,31 @@ public class ShopApp {
         //System.out.println(items);
     }
 
+    //Exercise 7-1: Produce and Catch an exception
+        
+    int average = 0;
+        int count = 0;
+        
+        for (Clothing item : c1.getItems()) {
+            if (item.getSize().equals("L")){
+                count ++;
+                average += item.getPrice();
+            }
+        }
+    
+    try {
+            //better way of wrting to avoid exception
+            //average = (count == 0) ? 0 : average/count; 
+            
+            average = average / count;
+            System.out.println("Average price " + average + ", Count " + count);
+           
+    }catch (ArithmeticException e){
+            System.out.println("Don't divide by 0");
+        {
+    }
+
+
 //}
 
 
