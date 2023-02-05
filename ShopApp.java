@@ -138,7 +138,7 @@ public class ShopApp {
         //items points to to the Clothing array
         for(Clothing item : c1.getItems()){
             //System.out.println("Items " + item.getDescription());
-            //Exercise 6-1
+            //Exercise 8-1
             System.out.println("Items output" + item);
             //if condition that checks if customer size if the same as the clothing size
             //if ci size == item size
