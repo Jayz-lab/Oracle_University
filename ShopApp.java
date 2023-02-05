@@ -137,7 +137,9 @@ public class ShopApp {
         //clothing is the type, item is the iterator that iterates the array items
         //items points to to the Clothing array
         for(Clothing item : c1.getItems()){
-            System.out.println("Items " + item.getDescription());
+            //System.out.println("Items " + item.getDescription());
+            //Exercise 6-1
+            System.out.println("Items output" + item);
             //if condition that checks if customer size if the same as the clothing size
             //if ci size == item size
             //if(c1.getSize().equals(item.getSize())){
