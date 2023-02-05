@@ -65,4 +65,11 @@ public class Clothing {
         this.size = size;
     }
     
+    //Exercise 8-1: Override the 'toString' Method
+    //toString method: prodeuces text value for the object.
+    @Override
+    public String toString (){
+        return getDescription()+ ", " + getSize() + "," + getPrice();
+    }
+    
 }
