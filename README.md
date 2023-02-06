@@ -56,4 +56,5 @@ Exercises Completed:
 - Exercise 6-3: Use Static Constants, completed 2/02/2023.
 - Exercise 7-1: Produce and Catch an exception, completed 3/02/2023.
 - Exercise 8-1: Override the 'toString' Method, completed 5/02/2023.
+- Exercise 8-2: Sorting Clothing Items (Interface compareTo<T>), Completed 6/02/2023.
 
