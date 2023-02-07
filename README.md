@@ -59,4 +59,5 @@ Exercises Completed:
 - Exercise 8-2: Sorting Clothing Items (Interface compareTo<T>), Completed 6/02/2023.
 
 ### Capstone Case Study
-[Creating an API for a Human Resource Program.](https://github.com/Jayz-lab/Java_Capstone_CaseStudy)
+Oracle Explorer, Java basics capstone case study.
+- [Creating an API for a Human Resource Program.](https://github.com/Jayz-lab/Java_Capstone_CaseStudy)
