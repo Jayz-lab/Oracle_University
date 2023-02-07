@@ -27,8 +27,6 @@ An Overview of Java
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # This repo contains completed exercise codes for the Oracle Java programming Basics.
 
-![](https://github.com/Jayz-lab/Oracle_University/blob/main/Java_Explorer_Completed.png)
-
 Main Method:
 
 - [shopApp. Java](https://github.com/Jayz-lab/Java_Explorer/blob/main/ShopApp.java)
@@ -61,3 +59,6 @@ Exercises Completed:
 ### Capstone Case Study
 Oracle Explorer, Java basics capstone case study.
 - [Creating an API for a Human Resource Program.](https://github.com/Jayz-lab/Java_Capstone_CaseStudy)
+
+### Assessment completed
+![](https://github.com/Jayz-lab/Oracle_University/blob/main/Java_Explorer_Completed.png)
